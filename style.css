@@ -1,0 +1,39 @@
+body {
+  background-color: #222;
+  margin: 20px
+}
+
+#main {
+  /* background-color: aliceblue; */
+  padding: 20px;
+}
+
+button {
+  background-color: #222;
+  color: white;
+
+  outline-width: 3px;
+  outline-style: solid;
+  outline-color: white;
+
+  font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+  border-radius: 10px;
+
+  width: 100px;
+  height: 50px;
+  vertical-align: bottom;
+
+  margin: 5px;
+  transition: outline 250ms, scale 150ms;
+  cursor: pointer;
+}
+
+button:hover {
+  outline-width: 6px;
+  scale: 1.05;
+}
+
+button.qp { outline-color: #ec3535; }
+button.er { outline-color: #33ec6b; }
+button.gt { outline-color: #ebee34; }
+button.ms { outline-color: #24e3d0; }

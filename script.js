@@ -17,18 +17,19 @@ function parseFileName(filename){
 
   filename = filename.replace(/^\d{4}_/, "").replace(".pdf", "")
 
-  filename = filename.replace("_qp"," Question Paper").replace("_er"," Examiner Report").replace("_gt"," Grade thresholds").replace("_ms"," Mark Scheme")
+  filename = filename.replace("_qp"," Question Paper").replace("_er"," Examiner Report").replace("_gt"," Grade thresholds").replace("_ms"," Mark Scheme").replace("_in"," Insert")
 
   return filename
 }
 
 function getClassName(filename){
-  if (!filename.includes(".pdf")) return filename
+  if (!filename.includes(".pdf")) return ""
 
-  if (filename.includes("qp")) return "qp"
-  if (filename.includes("er")) return "er"
-  if (filename.includes("gt")) return "gt"
-  if (filename.includes("ms")) return "ms"
+  classNameList = ["qp", "er", "gt", "ms", "in"]
+
+  for(var i=0;i<classNameList.length;i++){
+    if (filename.includes("_"+classNameList[i])) return classNameList[i]
+  }
 
   return ""
 }

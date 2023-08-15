@@ -17,12 +17,13 @@ button {
   outline-color: white;
 
   font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 100%;
+
   border-radius: 10px;
+  width: 150px;
+  height: 60px;
 
-  width: 100px;
-  height: 50px;
   vertical-align: bottom;
-
   margin: 5px;
   transition: outline 250ms, scale 150ms;
   cursor: pointer;
@@ -37,3 +38,4 @@ button.qp { outline-color: #ec3535; }
 button.er { outline-color: #33ec6b; }
 button.gt { outline-color: #ebee34; }
 button.ms { outline-color: #24e3d0; }
+button.in { outline-color: #e38424; } 
